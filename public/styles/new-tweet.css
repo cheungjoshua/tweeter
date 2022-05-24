@@ -1,0 +1,32 @@
+textarea {
+  background: none;
+  resize: none;
+  outline: 0;
+  border-width: 0 0 4px;
+  border-color: black;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.formFooter {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee";
+}
+
+.formFooter button {
+  border: none;
+  color: white;
+  background-color: blue;
+  font-size: 0.8em;
+  padding: 0.25em 0.75em;
+}
+
+.red {
+  color: red;
+}

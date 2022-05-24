@@ -1,0 +1,31 @@
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4056a1;
+  height: 120px;
+  color: #ffffff;
+  width: 100%;
+}
+
+nav .container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+}
+
+nav .logo {
+  font-family: "Bungee", cursive;
+  font-size: 1.5em;
+  margin: 1.5em;
+}
+
+nav .icon {
+  margin-top: 0.25em;
+  text-align: center;
+}
+
+.icon i {
+  color: red;
+}
