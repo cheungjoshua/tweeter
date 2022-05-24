@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // --- our code goes here ---
   $("textarea").on("input", function () {
     let msg = $("textarea").val();
     $("output.counter").text(140 - msg.length);
