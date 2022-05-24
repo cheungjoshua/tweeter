@@ -1,0 +1,53 @@
+article {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  padding: 0.75em;
+  margin-top: 2em;
+  color: black;
+}
+
+article:hover {
+  box-shadow: 0.5em 0.5em 0.25em rgba(33, 33, 33, 0.2);
+}
+
+article.tweet .tweet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: none;
+  background: none;
+}
+
+.userLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+article img {
+  width: 75px;
+}
+
+.userName {
+  color: grey;
+}
+
+article .line {
+  height: 3px;
+  background-color: black;
+}
+
+.tweet-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+  font-size: 0.75em;
+}
+
+.tweet-footer .icons {
+  color: navy;
+  font-size: 0.7em;
+}
