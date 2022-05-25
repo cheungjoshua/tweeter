@@ -41,18 +41,22 @@ $("document").ready(() => {
   loadTweets();
   $("form").submit(function (event) {
     event.preventDefault();
+    let msg = $("textarea").val();
+    if (msg.length > 0 && msg.length < 140) {
+      let form = $(this);
+      let actionUrl = form.attr("action");
 
-    let form = $(this);
-    let actionUrl = form.attr("action");
-
-    $.ajax({
-      type: "POST",
-      url: actionUrl,
-      data: form.serialize(),
-      success: function (data) {
-        console.log(data);
-      },
-    });
-    this.reset();
+      $.ajax({
+        type: "POST",
+        url: actionUrl,
+        data: form.serialize(),
+        success: function (data) {
+          console.log(data);
+        },
+      });
+      this.reset();
+    } else {
+      alert("tweet cannot be empty or over 140");
+    }
   });
 });
