@@ -1,4 +1,5 @@
 const renderTweets = function (tweets) {
+  $("#tweets-container").empty();
   for (let tweet of tweets) {
     let result = createTweetElement(tweet);
     $("#tweets-container").prepend(result);
@@ -50,9 +51,7 @@ $("document").ready(() => {
         type: "POST",
         url: actionUrl,
         data: form.serialize(),
-        success: function (data) {
-          console.log(data);
-        },
+        success: loadTweets(),
       });
       this.reset();
     } else {
