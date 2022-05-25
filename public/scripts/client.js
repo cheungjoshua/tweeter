@@ -66,4 +66,20 @@ $("document").ready(() => {
   };
 
   renderTweets(data);
+
+  $("form").submit(function (event) {
+    event.preventDefault();
+
+    let form = $(this);
+    let actionUrl = form.attr("action");
+
+    $.ajax({
+      type: "POST",
+      url: actionUrl,
+      data: form.serialize(),
+      success: function (data) {
+        console.log(data);
+      },
+    });
+  });
 });
