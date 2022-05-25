@@ -11,7 +11,7 @@ article:hover {
   box-shadow: 0.5em 0.5em 0.25em rgba(33, 33, 33, 0.2);
 }
 
-article.tweet .tweet-header {
+article.tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
