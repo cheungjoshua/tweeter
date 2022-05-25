@@ -1,44 +1,37 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+// const data = [
+//   {
+//     user: {
+//       name: "Newton",
+//       avatars: "https://i.imgur.com/73hZDYK.png",
+//       handle: "@SirIsaac",
+//     },
+//     content: {
+//       text: "If I have seen further it is by standing on the shoulders of giants",
+//     },
+//     created_at: 1461116232227,
+//   },
+//   {
+//     user: {
+//       name: "Descartes",
+//       avatars: "https://i.imgur.com/nlhLi3I.png",
+//       handle: "@rd",
+//     },
+//     content: {
+//       text: "Je pense , donc je suis",
+//     },
+//     created_at: 1461113959088,
+//   },
+// ];
 
-const data = [
-  {
-    user: {
-      name: "Newton",
-      avatars: "https://i.imgur.com/73hZDYK.png",
-      handle: "@SirIsaac",
-    },
-    content: {
-      text: "If I have seen further it is by standing on the shoulders of giants",
-    },
-    created_at: 1461116232227,
-  },
-  {
-    user: {
-      name: "Descartes",
-      avatars: "https://i.imgur.com/nlhLi3I.png",
-      handle: "@rd",
-    },
-    content: {
-      text: "Je pense , donc je suis",
-    },
-    created_at: 1461113959088,
-  },
-];
+const renderTweets = function (tweets) {
+  for (let tweet of tweets) {
+    let result = createTweetElement(tweet);
+    $("#tweets-container").prepend(result);
+  }
+};
 
-$("document").ready(() => {
-  const renderTweets = function (tweets) {
-    for (let tweet of tweets) {
-      let result = createTweetElement(tweet);
-      $("#tweets-container").append(result);
-    }
-  };
-
-  const createTweetElement = function (tweet) {
-    let $tweet = $(` <article class="tweet">
+const createTweetElement = function (tweet) {
+  let $tweet = $(` <article class="tweet">
             <header class="tweet-header">
               <div class="userLogo">
                 <div class="pic">
@@ -62,11 +55,15 @@ $("document").ready(() => {
             </footer>
           </article>`);
 
-    return $tweet;
-  };
+  return $tweet;
+};
 
-  renderTweets(data);
+const loadTweets = function () {
+  $.ajax("/tweets", { method: "GET" }).then((data) => renderTweets(data));
+};
 
+$("document").ready(() => {
+  loadTweets();
   $("form").submit(function (event) {
     event.preventDefault();
 
@@ -81,5 +78,6 @@ $("document").ready(() => {
         console.log(data);
       },
     });
+    this.reset();
   });
 });
