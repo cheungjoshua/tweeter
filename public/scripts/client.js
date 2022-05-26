@@ -57,6 +57,7 @@ $("document").ready(() => {
       $(".textEmpty").fadeIn("slow");
     }
     if (msg.length > 0 && msg.length < 140) {
+      // $(".textEmpty").fadeOut(300);
       let form = $(this);
       let actionUrl = form.attr("action");
       console.log(this);

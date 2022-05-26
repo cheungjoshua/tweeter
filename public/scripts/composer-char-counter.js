@@ -5,6 +5,16 @@ $(document).ready(function () {
     if (140 - msg.length < 0) {
       $("output.counter").addClass("red");
       $(".textToolong").fadeIn("slow");
+    } else {
+      $("output.counter").removeClass("red");
+      $(".textToolong").fadeOut(300);
+    }
+
+    if (msg.length === 0) {
+      $(".textEmpty").fadeIn("slow");
+    }
+    if (msg.length !== 0) {
+      $(".textEmpty").fadeOut(300);
     }
   });
 });
