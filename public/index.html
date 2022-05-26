@@ -38,6 +38,11 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/new-tweet-toggle.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+    <script type="text/javascript" src="/scripts/top-button.js"></script>
   </head>
 
   <body>
@@ -82,16 +87,13 @@
             </div>
           </form>
         </section>
-        <section id="tweets-container"></section>
+        <section id="tweets-container">
+          <!-- Tweets display with Ajax by using Jquery -->
+        </section>
       </main>
     </div>
     <button class="back-to-top hidden">
       <i class="fa-solid fa-angles-up"></i>
     </button>
-    <script
-      type="text/javascript"
-      src="/scripts/composer-char-counter.js"
-    ></script>
-    <script type="text/javascript" src="/scripts/top-button.js"></script>
   </body>
 </html>

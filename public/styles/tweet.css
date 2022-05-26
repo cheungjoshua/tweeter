@@ -5,6 +5,7 @@ article {
   padding: 0.75em;
   /* margin-top: 2em; */
   color: black;
+  word-wrap: break-word;
 }
 
 article:hover {

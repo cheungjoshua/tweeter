@@ -68,6 +68,7 @@ $("document").ready(() => {
         success: loadTweets,
       });
       this.reset();
+      $("output.counter").text(140);
     }
   });
 });

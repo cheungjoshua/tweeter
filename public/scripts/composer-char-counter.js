@@ -9,7 +9,6 @@ $(document).ready(function () {
       $("output.counter").removeClass("red");
       $(".textToolong").fadeOut(300);
     }
-
     if (msg.length === 0) {
       $(".textEmpty").fadeIn("slow");
     }
