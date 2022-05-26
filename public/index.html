@@ -36,17 +36,18 @@
     ></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/new-tweet-toggle.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <div><span class="logo">tweeter</span></div>
-      <div class="container">
+      <div class="container compose-toggle">
         <div class="text">
           <span><strong>Write</strong> a new tweet</span>
         </div>
-        <div class="icon"><i class="fa-solid fa-angles-down"></i></div>
+        <div class="icon"><i class="fa-solid fa-angles-down arrow"></i></div>
       </div>
     </nav>
     <header class="avator-header">
@@ -60,7 +61,7 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet hide">
         <h2>Compose Tweet</h2>
         <div class="textEmpty">It is empty! Tweet something!</div>
         <div class="textToolong">Too Long! No more than 140 chars!</div>

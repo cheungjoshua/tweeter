@@ -13,6 +13,7 @@ nav .container {
   display: flex;
   flex-direction: column;
   margin: 1.5em;
+  position: relative;
 }
 
 nav .logo {
@@ -23,9 +24,34 @@ nav .logo {
 
 nav .icon {
   margin-top: 0.25em;
+  height: 1em;
   text-align: center;
 }
 
 .icon i {
   color: red;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-top: -25px;
+  margin-left: -25px;
+  height: 1em;
+  width: 1em;
+
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 30;
+  }
 }
