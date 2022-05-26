@@ -1,12 +1,5 @@
-.new-tweet.hide {
-  position: absolute;
-  opacity: 0;
-}
-
 .new-tweet {
-  position: static;
-  opacity: 1;
-  transition: opacity linear;
+  display: none;
 }
 
 textarea {

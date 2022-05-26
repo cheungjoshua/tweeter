@@ -1,5 +1,5 @@
 $("document").ready(() => {
   $(".compose-toggle").click(function () {
-    $(".new-tweet").toggleClass("hide");
+    $(".new-tweet").fadeToggle("slow");
   });
 });
