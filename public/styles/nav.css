@@ -24,7 +24,7 @@ nav .logo {
 
 nav .icon {
   margin-top: 0.25em;
-  height: 1em;
+  height: 1.25em;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ nav .icon {
   height: 1em;
   width: 1em;
 
-  animation: bounce 1s infinite;
+  animation: bounce 1.5s infinite;
 }
 
 @keyframes bounce {
