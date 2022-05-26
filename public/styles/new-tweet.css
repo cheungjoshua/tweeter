@@ -27,6 +27,10 @@ form {
   padding: 0.25em 0.75em;
 }
 
+.formFooter button:hover {
+  background-color: #596694;
+}
+
 .red {
   color: red;
 }
