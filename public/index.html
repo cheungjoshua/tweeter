@@ -50,36 +50,41 @@
         <div class="icon"><i class="fa-solid fa-angles-down arrow"></i></div>
       </div>
     </nav>
-    <header class="avator-header">
-      <div class="avator">
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div>
-        <h2 class="name">Joshua Cheung</h2>
-      </div>
-    </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <div class="textEmpty">It is empty! Tweet something!</div>
-        <div class="textToolong">Too Long! No more than 140 chars!</div>
-        <form action="/tweets" method="POST">
-          <!-- <label for="tweet-text"></label> -->
-          <textarea
-            name="text"
-            id="tweet-text"
-            placeholder="What are you humming about?"
-          ></textarea>
-          <div class="formFooter">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section id="tweets-container"></section>
-    </main>
+    <div class="main-container">
+      <header class="avator-header">
+        <div class="avator">
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div>
+          <h2 class="name">Joshua Cheung</h2>
+        </div>
+      </header>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <!-- <h2>Compose Tweet</h2> -->
+          <div class="textEmpty">It is empty! Tweet something!</div>
+          <div class="textToolong">Too Long! No more than 140 chars!</div>
+          <form action="/tweets" method="POST">
+            <!-- <label for="tweet-text"></label> -->
+            <textarea
+              name="text"
+              id="tweet-text"
+              placeholder="What are you humming about?"
+            ></textarea>
+            <div class="formFooter">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
+        <section id="tweets-container"></section>
+      </main>
+    </div>
+
     <script
       type="text/javascript"
       src="/scripts/composer-char-counter.js"

@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   /* background: #4056a1; */
-  height: 120px;
+  height: 110px;
   color: #ffffff;
   width: 100%;
 }
@@ -34,13 +34,12 @@ nav .icon {
 
 .arrow {
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
   bottom: 0;
-  margin-top: -25px;
-  margin-left: -25px;
-  height: 1em;
-  width: 1em;
-
+  /* margin-top: -25px; */
+  margin-left: -10px;
+  /* height: 1em;
+  width: 1em; */
   animation: bounce 1.5s infinite;
 }
 

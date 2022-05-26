@@ -34,3 +34,53 @@ main {
   margin: auto;
   text-align: center;
 }
+
+@media only screen and (max-width: 1024px) {
+  .new-tweet {
+    margin: 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  nav {
+    background: #4056a1;
+    z-index: 99;
+  }
+
+  .main-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 2em;
+    width: 90%;
+    margin-top: 120px;
+    top: 2em;
+  }
+
+  header.avator-header {
+    width: 450px;
+    height: 450px;
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  main {
+    width: auto;
+  }
+
+  .new-tweet {
+    margin-bottom: 2em;
+  }
+
+  .tweet {
+    margin-bottom: 2em;
+  }
+}
