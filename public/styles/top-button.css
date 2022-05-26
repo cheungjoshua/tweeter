@@ -1,0 +1,15 @@
+.hidden {
+  display: none;
+}
+
+button.back-to-top {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 100%;
+  background: red;
+  color: white;
+}
