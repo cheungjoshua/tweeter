@@ -1,3 +1,5 @@
+/* Style for Tweets */
+
 article {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,7 @@ article {
 }
 
 article:hover {
-  box-shadow: 0.5em 0.5em 0.25em rgba(33, 33, 33, 0.2);
+  box-shadow: 0.5em 0.5em rgba(33, 33, 33, 0.2);
 }
 
 article.tweet header {
@@ -51,4 +53,8 @@ article .line {
 .tweet-footer .icons {
   color: navy;
   font-size: 0.7em;
+}
+
+.tweet-footer .icons i:hover {
+  color: cornflowerblue;
 }

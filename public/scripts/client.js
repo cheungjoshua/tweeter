@@ -1,7 +1,14 @@
+//Logic Ajax the tweet display
+
+// Logic for after get the data from server
 const renderTweets = function (tweets) {
+  // empty the old tweet
   $("#tweets-container").empty();
+  //loop thought the new data
   for (let tweet of tweets) {
+    //call function for each
     let result = createTweetElement(tweet);
+    //add the tweet one by one
     $("#tweets-container").prepend(result);
   }
 };
@@ -13,10 +20,11 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
+//Create the template for the tweet
 const createTweetElement = function (tweet) {
   // use sanitize function for input field data
   let escapetxt = escape(tweet.content.text);
-
+  // template with html tag
   let $tweet = $(` <article class="tweet">
                   <header class="tweet-header">
                     <div class="userLogo">
@@ -40,24 +48,28 @@ const createTweetElement = function (tweet) {
                     </div>
                   </footer>
                 </article>`);
-
+  // return the tamplate
   return $tweet;
 };
 
+// Load tweets with get method from server
 const loadTweets = function () {
   $.ajax("/tweets", { method: "GET" }).then((data) => renderTweets(data));
 };
 
 $("document").ready(() => {
+  // Get tweet from server everytime load the page
   loadTweets();
+  // Ajax: send tweet to server
   $("form").submit(function (event) {
     event.preventDefault();
     let msg = $("textarea").val();
     if (msg.length === 0) {
       $(".textEmpty").fadeIn("slow");
     }
+    // if text more than 140 chars and less than 0 send error
+    // else submit the tweet and send to server
     if (msg.length > 0 && msg.length < 140) {
-      // $(".textEmpty").fadeOut(300);
       let form = $(this);
       let actionUrl = form.attr("action");
       console.log(this);
@@ -67,7 +79,9 @@ $("document").ready(() => {
         data: form.serialize(),
         success: loadTweets,
       });
+      // empty the text field after submit
       this.reset();
+      // reset the counter back to 140
       $("output.counter").text(140);
     }
   });
