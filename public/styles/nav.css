@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #4056a1;
+  /* background: #4056a1; */
   height: 120px;
   color: #ffffff;
   width: 100%;

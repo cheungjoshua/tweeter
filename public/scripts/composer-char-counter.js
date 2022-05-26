@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("output.counter").text(140 - msg.length);
     if (140 - msg.length < 0) {
       $("output.counter").addClass("red");
+      $(".textToolong").fadeIn("slow");
     }
   });
 });

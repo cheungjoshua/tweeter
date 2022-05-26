@@ -53,6 +53,9 @@ $("document").ready(() => {
   $("form").submit(function (event) {
     event.preventDefault();
     let msg = $("textarea").val();
+    if (msg.length === 0) {
+      $(".textEmpty").fadeIn("slow");
+    }
     if (msg.length > 0 && msg.length < 140) {
       let form = $(this);
       let actionUrl = form.attr("action");
@@ -64,8 +67,6 @@ $("document").ready(() => {
         success: loadTweets,
       });
       this.reset();
-    } else {
-      alert("tweet cannot be empty or over 140");
     }
   });
 });
