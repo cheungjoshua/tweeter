@@ -30,4 +30,6 @@ This project build upon HTML, CSS, JS, jQuery and AJAX front-end skills, and Nod
 
 - Express
 - Node 5.10.x or above
-- Jquery
+- Chance
+- Body-parse
+- MD5
