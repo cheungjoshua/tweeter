@@ -6,19 +6,19 @@ This project build upon HTML, CSS, JS, jQuery and AJAX front-end skills, and Nod
 
 ## Final Product
 
-!["Mobile Version"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.06.29.png?raw=true)
-
 - Mobile Version
-  !["Mobile w/ New tweet"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.06.15.png?raw=true)
+  !["Mobile Version"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.06.29.png?raw=true)
+
 - Mobile w/ New tweet
-  !["Mobile w/ back-to-top button"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.07.47.png?raw=true)
+  !["Mobile w/ New tweet"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.06.15.png?raw=true)
 - Mobile w/ back-to-top button
-  !["Desktop Version"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.05.12.png?raw=true)
+  !["Mobile w/ back-to-top button"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.07.47.png?raw=true)
 - Desktop Version
-  !["Desktop w/ New tweet"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.05.53.png?raw=true)
+  !["Desktop Version"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.05.12.png?raw=true)
 - Desktop w/ New tweet
-  !["Desktop w/ back-to-top button"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.07.26.png?raw=true)
+  !["Desktop w/ New tweet"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.05.53.png?raw=true)
 - Desktop w/ back-to-top button
+  !["Desktop w/ back-to-top button"](https://github.com/cheungjoshua/tweeter/blob/master/docs/Screen%20Shot%202022-05-26%20at%2017.07.26.png?raw=true)
 
 ## Getting Started
 
